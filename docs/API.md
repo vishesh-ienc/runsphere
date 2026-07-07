@@ -9,6 +9,29 @@
 
 ---
 
+## External API Integrations
+
+The project integrates with the following third-party APIs:
+
+1. **Mapbox APIs**:
+   - **Maps SDK**: Renders interactive map canvas, handles path plotting, markers, and zoom/pan.
+   - **Geocoding API**: Translates location queries (e.g. "Mumbai Central") to geographic coordinates `[lat, lng]` and vice-versa.
+   - *Requires*: `MAPBOX_ACCESS_TOKEN` / `VITE_MAPBOX_ACCESS_TOKEN`
+
+2. **GraphHopper Routing API**:
+   - Computes standard directions and routing for base comparison and initial route plotting.
+   - *Requires*: `GRAPHHOPPER_API_KEY`
+
+3. **OpenWeather Air Pollution API**:
+   - Provides AQI (Air Quality Index) values and chemical component breakdowns (CO, NO, NO2, O3, SO2, NH3, PM2.5, PM10) for coordinate points.
+   - *Requires*: `OPENWEATHER_API_KEY`
+
+4. **Open-Elevation API**:
+   - Retrieves elevation profiles for coordinates. Completely free and open access.
+   - *Endpoint*: `https://api.open-elevation.com/api/v1/lookup`
+
+---
+
 ## Backend API Endpoints
 
 All feature endpoints are prefixed with `/api/v1`.
